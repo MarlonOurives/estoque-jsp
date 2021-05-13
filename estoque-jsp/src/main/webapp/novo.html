@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Estoque</title>
+<link rel="icon" href="imagens/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Criar novo produto</h1>
+	<form action="insert" name="frmProduto" >
+		<table>
+			<tr>
+				<td><input type="text" name="nome" placeholder="Nome"
+					class="caixa1"></td>
+			</tr>
+			<tr>
+				<td><input type="number" name="quantidade"
+					placeholder="Quantidade" class="caixa2" ></td>
+			</tr>
+			<tr>
+				<td><input type="number" name="valor" placeholder="Valor"
+					class="caixa2"></td>
+			</tr>
+		</table>
+		<input type="button" value="Adicionar" class="botao"
+			onclick="validar()">
+	</form>
+
+	<script type="text/javascript" src="scripts/validador.js"></script>
+</body>
+</html>
